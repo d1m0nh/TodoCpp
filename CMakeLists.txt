@@ -9,7 +9,6 @@ set(CPP_SRC_DIR src)
 set(OBJ_C_DIR platform/objc)
 set(DJINNI_DIR deps/djinni)
 set(SQLITE_DIR deps/sqlite)
-set(FMT_DIR deps/fmt)
 set(DJINNI_SUPPORT_DIR ${DJINNI_DIR}/support-lib)
 set(DJINNI_SUPPORT_JNI_DIR ${DJINNI_SUPPORT_DIR}/jni)
 set(DJINNI_SUPPORT_OBJ_C_DIR ${DJINNI_SUPPORT_DIR}/objc)
@@ -26,7 +25,6 @@ set(INCLUDE_DIRS
     ${GENERATED_SRC_CPP_DIR}
     ${DJINNI_SUPPORT_DIR}
     ${SQLITE_DIR}
-    ${FMT_DIR}
 )
 set(SRC_FILES "")
 
@@ -143,10 +141,6 @@ add_library(TodoCpp SHARED ${SRC_FILES})
 #
 add_subdirectory(${DJINNI_DIR})
 target_link_libraries(TodoCpp djinni)
-
-add_subdirectory(${FMT_DIR})
-target_link_libraries(TodoCpp fmt)
-
 
 target_link_libraries(TodoCpp sqlite3)
 

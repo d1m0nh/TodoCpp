@@ -36,7 +36,7 @@ cd scripts && ./build_ios.sh
 - iOS 10.0
 - macOS 10.12
 
-Once successfully built the universal `TodoCpp.framework` and `libdjinni.a` library will be available in the `libs` folder under the target device (iOS or macos). From this point the two can simply be dragged and dropped into a project or added by reference.
+Once successfully built the universal `TodoCpp.framework` and `libdjinni.a` library will be available in the `build/ios/lib` folder under the target device (iOS or macos). From this point the two can simply be dragged and dropped into a project or added by reference.
 
 #### Notes
 
