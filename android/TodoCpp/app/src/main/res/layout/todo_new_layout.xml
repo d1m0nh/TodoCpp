@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/task_headline"
+            android:id="@+id/todoNewHead"
+            android:height="80dp"
+            android:gravity="start|center"
+            android:paddingLeft="20dp"
+         />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/task_title_label"
+            android:id="@+id/todoTitleLabel"
+            android:layout_marginLeft="20dp"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newTodoTitle"
+            android:paddingLeft="20dp"
+            android:height="60dp"
+            android:gravity="start|center"
+            android:focusableInTouchMode="true"
+            android:selectAllOnFocus="false"
+            android:enabled="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/task_title_placeholder"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/task_category_label"
+            android:gravity="start|center"
+            android:id="@+id/todoCategoryLabel"
+            android:layout_marginLeft="20dp"
+        />
+
+        <Spinner
+            android:id="@+id/newTodoCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:entries="@array/category_arrays"
+            android:prompt="@string/category_prompt"
+            android:layout_gravity="center_horizontal|bottom"
+          />
+
+    <Button
+        android:id="@+id/addTodo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task_add"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    </LinearLayout>
+
+
+

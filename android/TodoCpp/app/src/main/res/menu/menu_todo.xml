@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ToDoActivity">
+
+    <item android:id="@+id/Info" android:title="@string/menu_category_info" android:enabled="false" android:orderInCategory="100" app:showAsAction="never"/>
+    <item android:id="@+id/All" android:title="@string/menu_category_all" android:orderInCategory="200" />
+    <item android:id="@+id/Other" android:title="@string/menu_category_other" android:orderInCategory="300" />
+    <item android:id="@+id/Shopping" android:title="@string/menu_category_shopping" android:orderInCategory="400" />
+
+    <item android:id="@+id/Study" android:title="@string/menu_category_study" android:orderInCategory="600" />
+    <item android:id="@+id/Work" android:title="@string/menu_category_work" android:orderInCategory="700" />
+    <item android:id="@+id/Reminder" android:title="@string/menu_category_reminder" android:orderInCategory="800" />
+</menu>

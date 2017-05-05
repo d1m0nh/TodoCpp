@@ -1,0 +1,6 @@
+[submodule "deps/polly"]
+	path = deps/polly
+	url = git@github.com:d1m0nh/polly.git
+[submodule "deps/djinni"]
+	path = deps/djinni
+	url = git@github.com:d1m0nh/djinni.git

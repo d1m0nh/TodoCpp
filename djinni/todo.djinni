@@ -1,0 +1,29 @@
+
+todo_app_core = interface +c {
+    static create_app(root_path: string, logger: logger) : todo_app_core;
+
+    start();
+    stop();
+
+    get_todo_manager() : todo_manager;
+}
+
+todo = record {
+    todo_title: string;
+    todo_category: string;
+    todo_state: i32;
+    todo_id: i32;
+}
+
+todo_manager = interface +c {
+    add_todo(todo: todo);
+    get_todos(): optional<list<todo>>;
+    remove_todo(id: i32);
+    get_todos_by_category(category: string) : optional<list<todo>>;
+}
+
+logger = interface +j +o {
+    i(tag: string, message: string);
+    d(tag: string, message: string);
+    e(tag: string, error: string);
+}

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TODOS</string>
+    <string name="task_headline">ADD NEW TODO</string>
+    <string name="task_title_placeholder">Enter a title here</string>
+    <string name="task_title_label">Todo title</string>
+    <string name="task_category_label">Todo category</string>
+    <string name="task_add">Add Todo</string>
+    <string name="bs_task_ip">In Progress</string>
+    <string name="bs_task_fin">Finished</string>
+    <string name="bs_task_del">Delete</string>
+    <string name="bs_task_cancel">Cancel</string>
+    <string name="category_prompt">Choose category</string>
+
+    <string-array name="category_arrays">
+        <item>Other</item>
+        <item>Shopping</item>
+        <item>Study</item>
+        <item>Work</item>
+        <item>Reminder</item>
+    </string-array>
+
+    <string name="menu_category_info">Filter categories:</string>
+    <string name="menu_category_all">All</string>
+    <string name="menu_category_other">Other</string>
+    <string name="menu_category_shopping">Shopping</string>
+    <string name="menu_category_study">Study</string>
+    <string name="menu_category_work">Work</string>
+    <string name="menu_category_reminder">Reminder</string>
+    <string name="menu_state_info">Filter states:</string>
+    <string name="menu_state_new">New added</string>
+    <string name="menu_state_in_progress">In progress</string>
+
+</resources>
